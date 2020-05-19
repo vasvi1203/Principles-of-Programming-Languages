@@ -6,7 +6,7 @@ int fact(int i) {
 }
 
 int main() {
-	int n = 5, f;
+	int n = 4, f;
 	f = fact(n);
 	return 0;
 }
