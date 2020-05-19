@@ -13,7 +13,9 @@ The questions are written in the form of comments in all the programs. All pytho
    - Harmonic divisor numbers :  They are positive integers whose divisors have a integer harmonic value.
   
 #### ***Assignment 2***
-
+1. To run _factorial.c_, execute the command : gcc factorial.c and then ./a.out on linux
+2. To run _recursive.c_, execute the command : gcc -fno-stack-protector recursive.c and then ./a.out on linux
+2. Pdfs of Stack Frames of respective programs are attached [here](https://github.com/vasvi1203/PPL/tree/master/Assignment2).
 
 #### ***Assignment 3***
 1. To run the program, execute the command : python animals_shapes.py or python3 animals_shapes.py
@@ -49,6 +51,25 @@ The questions are written in the form of comments in all the programs. All pytho
    - _pip install tkinter_(for python 3) or _pip install Tkinter_(for python 2)
    - _pip install pillow_
 2. To run the program, execute the command : python paint.py or python3 paint.py on windows.
-3. A screenshot of the application is attached here.
+3. A screenshot of the application is attached [here](https://github.com/vasvi1203/PPL/blob/master/Example.jpg).
 
 #### ***Assignment 7***
+1. To run the program, execute the command : clisp _filename_ on linux
+2. Pdfs of Memory layout diagrams of respective programs are attached [here](https://github.com/vasvi1203/PPL/tree/master/Assignment7).
+
+#### ***Assignment 8***
+1. To run the program, execute the command : gprolog on linux and then execute the following steps in the prolog prompt:
+   - [flight].
+   - a(toronto,madrid).
+   - b(A,B,C,D,E). with A and B as any 2 cities
+   - c(toronto,paris).
+   - d(A,B,C,D,E). with A and B as any 2 cities
+   - e(A,B). with A and B as any 2 cities
+2. Prolog program components:
+      There are two types of clauses in the prolog database:
+         - Facts : A fact is a single piece of information. For eg. in this program, _route(toronto,london,'Air Canada',500,'360m')._ is a fact telling that there is a route from Toronto to London via flight "Air Canada" whose fare is $500 and the journey time is 360 minutes.
+         - Rules :  They are used to generate new information from facts, other rules, and even themselves. For eg. in this program, _flight(A,B,C,D,E) :- route(A,B,C,D,E)._ is a rule generating all the flights on various routes.
+  
+#### ***Assignment 9***
+1. To run the programs, execute the command : gcc _filename_ and then ./a.out on linux
+2. 
