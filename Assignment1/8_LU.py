@@ -10,7 +10,7 @@ def lu(a, n) :
 			sum_l = 0
 			for j in range(i) :
 				sum_l += (l[i][j] * u[j][k])
-			u[i][k] = a[i][k] - sum_l
+			u[i][k] = a[i][k] - sum_l	# Doolittle Algorithm
 
 		for k in range(i, n) :
 			if k == i :
@@ -19,7 +19,7 @@ def lu(a, n) :
 				sum_u = 0
 				for j in range(i) :
 					sum_u += (l[k][j] * u[j][i])
-				l[k][i] = (a[k][i] - sum_u) // u[i][i]
+				l[k][i] = (a[k][i] - sum_u) // u[i][i]		# Doolittle Algorithm
 	print_mat(l, u, n)
 				
 def print_mat(l, u, n) :

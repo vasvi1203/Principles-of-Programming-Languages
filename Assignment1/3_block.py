@@ -16,8 +16,8 @@ for i in range(1, sites + 1) :
 	
 time_int = input('Enter the time interval during which you want to block the site separated by a space : ').split()
 
-start = int(time_int[0])
-end = int(time_int[1])
+start = time_int[0]
+end = time_int[1]
 
 while True:
 	if dt(dt.now().year, dt.now().month, dt.now().day, start) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, end) :
