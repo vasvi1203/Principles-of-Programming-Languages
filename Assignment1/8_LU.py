@@ -1,7 +1,5 @@
 '''Computers usually solve square systems of linear equations using the LU decomposition. Write a program to compute LU decomposition.'''
 
-import sys
-
 def lu(a, n) :
 	l = [[0 for x in range(n)] for y in range(n)]
 	u = [[0 for x in range(n)] for y in range(n)] 
@@ -26,14 +24,14 @@ def print_mat(l, u, n) :
 	print('Lower triangular matrix :')
 	for i in range(n) :
 		for j in range(n) :
-			sys.stdout.write(str(l[i][j]) + '\t') 
-		print('\n')
+			print(str(l[i][j]), end = '\t') 
+			print('\n')
 			
 	print('Upper triangular matrix :')
 	for i in range(n) :
 		for j in range(n) :
-			sys.stdout.write(str(u[i][j]) + '\t') 
-		print('\n')
+			print(str(u[i][j]), end = '\t') 
+			print('\n')
 	
 if __name__ == '__main__' :
 	n = int(input('Enter the order of the matrix : '))
