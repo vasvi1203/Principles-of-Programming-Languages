@@ -18,8 +18,19 @@ The questions are written in the form of comments in all the programs. All pytho
 #### ***Assignment 3***
 1. To run the program, execute the command : python animals_shapes.py or python3 animals_shapes.py
 2. Definitions of some terms:
-   - Abstraction : It is about hiding unwanted details while giving out most essential details. For eg. while making a game, we have a Player class which has different methods. Theperson executing the code will only know the names of the methods but not how they are implemented.
-   - Encapsulation : It means hiding the code and data into a single unit. For eg. in the same Player class, there are different methods which are encapsulated inside that class.
-   - Public access specifier : 
-   - Private access specifier : 
-  
+   - Abstraction : It is about hiding unwanted details while giving out most essential details. For eg. in this program, the _class Animal()_ has different methods. The person executing the code will only know the names of the methods but not how they are implemented.
+   - Encapsulation : It means hiding the code and data into a single unit. For eg. all the different methods are encapsulated in the _class Animal()_ 
+   - Public access specifier : All data members and member functions of a class are public by default. Public access specifiers are shown in animals_shapes.py
+   - Private access specifier : Private access specifiers are declared by adding a double underscore ‘__’ symbol before the data member of that class. They are accessible within the class only.
+   
+#### ***Assignment 4***
+1. To run the program, execute the command : python animals_shapes.py or python3 main.py
+2. Definitions of some terms:
+   - Virtual functions : They are overridable functions. For eg. in the _animals.py_ file, the _def eats()_ method in the _class Dog()_ is a virtual function as it overwrites the default _def eats()_ method in _class Animal()_
+   - Abstract classes : 
+   - Base class : 
+   - Derive class : 
+   - Interfaces : 
+   - Polymorphism :
+   - Modularity :
+   - Hierarchy :
