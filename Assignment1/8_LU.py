@@ -25,13 +25,13 @@ def print_mat(l, u, n) :
 	for i in range(n) :
 		for j in range(n) :
 			print(str(l[i][j]), end = '\t') 
-			print('\n')
+		print('\n')
 			
 	print('Upper triangular matrix :')
 	for i in range(n) :
 		for j in range(n) :
 			print(str(u[i][j]), end = '\t') 
-			print('\n')
+		print('\n')
 	
 if __name__ == '__main__' :
 	n = int(input('Enter the order of the matrix : '))
