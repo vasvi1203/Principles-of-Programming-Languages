@@ -1,0 +1,1 @@
+file.txt contains this text. The Else block gets executed when there is no exception. The Finally block is always executed.
