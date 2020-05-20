@@ -51,7 +51,7 @@ The questions are written in the form of comments in all the programs. All pytho
    - _pip install tkinter_(for python 3) or _pip install Tkinter_(for python 2)
    - _pip install pillow_
 2. To run the program, execute the command : python paint.py or python3 paint.py on windows.
-3. A screenshot of the application is attached [here](https://github.com/vasvi1203/PPL/blob/master/Example.jpg).
+3. A screenshot of the application is attached [here](https://github.com/vasvi1203/PPL/blob/master/Assignment6/Example.png).
 
 #### ***Assignment 7***
 1. To run the program, execute the command : clisp _filename_ on linux
