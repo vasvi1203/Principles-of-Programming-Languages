@@ -184,6 +184,7 @@ bird1.sound()
 bird1.feature()
 # print(bird1.__beak)		Gives attribute error
 # print(Animal.__beak)		Gives attribute error
+# print(bird1._Animal__beak)	Another way to access a private variable
 print("\n")
 
 bird2 = Ostrich()
