@@ -418,7 +418,7 @@ class Paint(object):
 
 	def save_file(self):
 		try:
-			filename = filedialog.asksaveasfilename(defaultextension = '.jpg')
+			filename = filedialog.asksaveasfilename(defaultextension = '.png')
 			'''x = self.root.winfo_rootx() + self.canvas.winfo_x()
 			y = self.root.winfo_rooty() + self.canvas.winfo_y()
 			x1 = x + self.canvas.winfo_width()
