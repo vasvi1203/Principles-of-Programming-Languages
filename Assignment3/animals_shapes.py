@@ -222,7 +222,7 @@ class Circle(Shape):
 		t.circle(self.r)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Ellipse(Shape):
 	def __init__(self, a = 100, b = 50):
@@ -249,7 +249,7 @@ class Ellipse(Shape):
 		t.fillcolor("white")
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		t.shape("turtle")
 		
 class Triangle(Shape):
@@ -287,7 +287,7 @@ class Triangle(Shape):
 			t.forward(self.c)
 			time.sleep(2)
 			t.reset()
-			t.speed(1)
+			t.speed(2)
 		else:
 			print("Invalid triangle")
 
@@ -317,7 +317,7 @@ class Square(Shape):
 		t.forward(self.a)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Rectangle(Shape):
 	def __init__(self, l = 100, b = 200):
@@ -347,7 +347,7 @@ class Rectangle(Shape):
 		t.forward(self.b)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Pentagon(Shape):
 	def __init__(self, a = 100):
@@ -378,7 +378,7 @@ class Pentagon(Shape):
 		t.forward(self.a)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Hexagon(Shape):
 	def __init__(self, a = 100):
@@ -411,7 +411,7 @@ class Hexagon(Shape):
 		t.forward(self.a)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 
 class Parallelogram(Shape):
 	def __init__(self, l = 200, b = 100):
@@ -441,7 +441,7 @@ class Parallelogram(Shape):
 		t.forward(self.b)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Cube(Shape):
 	def __init__(self, a = 100):
@@ -496,7 +496,7 @@ class Cube(Shape):
 		t.forward(self.a)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 class Cuboid(Shape):
 	def __init__(self, l = 200, b = 200, h = 300):
@@ -556,7 +556,7 @@ class Cuboid(Shape):
 		t.forward(self.h)
 		time.sleep(2)
 		t.reset()
-		t.speed(1)
+		t.speed(2)
 		
 shape1 = Circle()
 shape1.set(70)
