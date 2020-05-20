@@ -21,7 +21,7 @@ void *func(void *arg) {
 	if(*id == 0) {
 		while(s < 60) {
 			sleep(1);
-			system("clear");
+			system("clear");	//system("cls"); for windows
 			printf("%02d:%02d:%02d\n", h, m, s);
 			s++;
 		}
