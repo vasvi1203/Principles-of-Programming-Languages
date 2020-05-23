@@ -12,7 +12,6 @@ void smash() {
 	a[2] = 6;
 	a[3] = 0x00005555; 
 	a[4] = 0x55555139;
-	virus();
 }
 
 int main() {
