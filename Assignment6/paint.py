@@ -6,8 +6,6 @@ import PIL.ImageGrab as ImageGrab
 import tkinter as tk
 
 
-
-
 class Paint(object):
 	def __init__(self, root):
 		self.root = root
@@ -387,6 +385,7 @@ class Paint(object):
 		except:
 			messagebox.showerror('Paint', 'Unable to save image!')
 
+			
 class CreateToolTip(object):
 	def __init__(self, widget, text='widget info'):
 		self.waittime = 500     #miliseconds
