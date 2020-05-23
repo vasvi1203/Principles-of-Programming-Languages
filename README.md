@@ -15,8 +15,8 @@ The questions are written in the form of comments in all the programs. All pytho
    - Harmonic divisor numbers :  They are positive integers whose divisors have a integer harmonic value.
   
 #### ***Assignment 2***
-1. To run _factorial.c_, execute the command : gcc factorial.c and then ./a.out on terminal or a.exe on cmd
-2. To run _recursive.c_, execute the command : gcc -fno-stack-protector recursive.c and then ./a.out on linux
+1. To run _recursion.c_, execute the command : gcc factorial.c and then ./a.out on linux
+2. To run _smashing.c_, execute the command : gcc -fno-stack-protector recursive.c and then ./a.out on linux
 2. Pdfs of Stack Frames of respective programs are attached [here](https://github.com/vasvi1203/PPL/tree/master/Assignment2).
 
 #### ***Assignment 3***
