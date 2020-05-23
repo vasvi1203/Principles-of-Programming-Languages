@@ -75,4 +75,4 @@ The questions are written in the form of comments in all the programs. All pytho
 #### ***Assignment 9***
 1. To run the programs, execute the command : gcc _filename_ -lpthread and then ./a.out on linux
 2. The concept of threading is implemented in this assignment.
-3. An array of size 3 is taken for _clock.c_ and mutex lock is used for the critical sections.
+3. An array of size 3 and present time is taken for _clock.c_ and mutex lock is used for the critical sections.
