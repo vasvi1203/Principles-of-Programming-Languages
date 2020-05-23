@@ -5,53 +5,7 @@ from tkinter import colorchooser, filedialog, messagebox
 import PIL.ImageGrab as ImageGrab
 import tkinter as tk
 
-class CreateToolTip(object):
-	def __init__(self, widget, text='widget info'):
-		self.waittime = 500     #miliseconds
-		self.wraplength = 180   #pixels
-		self.widget = widget
-		self.text = text
-		self.widget.bind("<Enter>", self.enter)
-		self.widget.bind("<Leave>", self.leave)
-		self.widget.bind("<ButtonPress>", self.leave)
-		self.id = None
-		self.tw = None
 
-	def enter(self, event=None):
-		self.schedule()
-
-	def leave(self, event=None):
-		self.unschedule()
-		self.hidetip()
-
-	def schedule(self):
-		self.unschedule()
-		self.id = self.widget.after(self.waittime, self.showtip)
-
-	def unschedule(self):
-		id = self.id
-		self.id = None
-		if id:
-			self.widget.after_cancel(id)
-
-	def showtip(self, event=None):
-		x = y = 0
-		x, y, cx, cy = self.widget.bbox("insert")
-		x += self.widget.winfo_rootx() + 55
-		y += self.widget.winfo_rooty() + 20
-		# creates a toplevel window
-		self.tw = Toplevel(self.widget)
-		# Leaves only the label and removes the app window
-		self.tw.wm_overrideredirect(True)
-		self.tw.wm_geometry("+%d+%d" % (x, y))
-		label = Label(self.tw, text=self.text, justify='left', background="#ffffff", relief='solid', borderwidth=1, wraplength = self.wraplength)
-		label.pack(ipadx=1)
-
-	def hidetip(self):
-		tw = self.tw
-		self.tw= None
-		if tw:
-			tw.destroy()
 
 
 class Paint(object):
@@ -119,11 +73,11 @@ class Paint(object):
 		self.eraser_tooltip = CreateToolTip(self.eraser_button, 'Eraser')
 
 		self.clear_image = PhotoImage(file = 'clear.png')
-		self.clear = Button(self.root, image = self.clear_image, command = lambda : self.canvas.delete("all"))
+		self.clear_button = Button(self.root, image = self.clear_image, command = self.clear)
 		#self.clear.place(x = 0, y = 217)
-		self.clear.grid(sticky = "W", row = 4, column = 0, padx = 16)
-		self.clear.config(cursor = "hand2")
-		self.clear_tooltip = CreateToolTip(self.clear, 'Clear the canvas area')
+		self.clear_button.grid(sticky = "W", row = 4, column = 0, padx = 16)
+		self.clear_button.config(cursor = "hand2")
+		self.clear_tooltip = CreateToolTip(self.clear_button, 'Clear the canvas area')
 
 		self.line_image = PhotoImage(file = 'line.png')
 		self.line_button = Button(self.root, image = self.line_image, command = self.line)
@@ -240,6 +194,10 @@ class Paint(object):
 		self.eraser_color = self.pen_color
 		self.choice = "   Canvas\n    Color"
 		self.change_label()
+
+	def clear(self):
+		self.canvas.configure(background = "white")
+		self.canvas.delete("all")
 
 	def undo(self):
 		try:
@@ -429,7 +387,53 @@ class Paint(object):
 		except:
 			messagebox.showerror('Paint', 'Unable to save image!')
 
+class CreateToolTip(object):
+	def __init__(self, widget, text='widget info'):
+		self.waittime = 500     #miliseconds
+		self.wraplength = 180   #pixels
+		self.widget = widget
+		self.text = text
+		self.widget.bind("<Enter>", self.enter)
+		self.widget.bind("<Leave>", self.leave)
+		self.widget.bind("<ButtonPress>", self.leave)
+		self.id = None
+		self.tw = None
 
+	def enter(self, event=None):
+		self.schedule()
+
+	def leave(self, event=None):
+		self.unschedule()
+		self.hidetip()
+
+	def schedule(self):
+		self.unschedule()
+		self.id = self.widget.after(self.waittime, self.showtip)
+
+	def unschedule(self):
+		id = self.id
+		self.id = None
+		if id:
+			self.widget.after_cancel(id)
+
+	def showtip(self, event=None):
+		x = y = 0
+		x, y, cx, cy = self.widget.bbox("insert")
+		x += self.widget.winfo_rootx() + 55
+		y += self.widget.winfo_rooty() + 20
+		# creates a toplevel window
+		self.tw = Toplevel(self.widget)
+		# Leaves only the label and removes the app window
+		self.tw.wm_overrideredirect(True)
+		self.tw.wm_geometry("+%d+%d" % (x, y))
+		label = Label(self.tw, text=self.text, justify='left', background="#ffffff", relief='solid', borderwidth=1, wraplength = self.wraplength)
+		label.pack(ipadx=1)
+
+	def hidetip(self):
+		tw = self.tw
+		self.tw= None
+		if tw:
+			tw.destroy()
 
 if __name__ == "__main__":
 	root = Tk()
