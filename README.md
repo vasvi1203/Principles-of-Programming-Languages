@@ -73,5 +73,5 @@ The questions are written in the form of comments in all the programs. All pytho
          - Rules :  They are used to generate new information from facts, other rules, and even themselves. For eg. in this program, _flight(A,B,C,D,E) :- route(A,B,C,D,E)._ is a rule generating all the flights on various routes.
   
 #### ***Assignment 9***
-1. To run the programs, execute the command : gcc _filename_ and then ./a.out on linux
+1. To run the programs, execute the command : gcc _filename_ -lpthread and then ./a.out on linux
 2. 
