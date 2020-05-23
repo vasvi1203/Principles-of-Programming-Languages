@@ -31,8 +31,8 @@ The questions are written in the form of comments in all the programs. All pytho
 1. To run the program, execute the command : python main.py or python3 main.py
 2. Definitions of some terms:
    - Virtual functions : They are overridable functions. For eg. in the _animals.py_ file, the _def eats()_ method in the _class Dog()_ is a virtual function as it overwrites the default _def eats()_ method in _class Animal()_
-   - Abstract class : It is a collection of some abstract methods as well as some concrete methods. For eg. in the _shapes.py_ file, _class Shapes()_ is an abstract class.
-   - Base class : It is the class being inherited from. For eg. in the _shapes.py_ file, _class Shapes()_ is a base class.
+   - Abstract class : It is a collection of some abstract methods as well as some concrete methods. For eg. in the _shapes.py_ file, _class Shape()_ is an abstract class.
+   - Base class : It is the class being inherited from. For eg. in the _shapes.py_ file, _class Shape()_ is a base class.
    - Derived class : It is the class that inherits from another class. For eg. in the _shapes.py_ file, _class Ellipse()_ is a derived class.
    - Interface : It is a collection of only abstract methods. For eg. in the _shapes.py_ file, _class Instance()_ is an interface.
    - Polymorphism : It allows us to define methods in the derived class with the same name as defined in their base class. 
