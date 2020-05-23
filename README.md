@@ -8,7 +8,7 @@ The questions are written in the form of comments in all the programs. All pytho
 1. To run any program, execute the command : python _filename_ or python3 _filename_ except for _3_block.py_
 2. To run _3_block.py_ on windows, run cmd or windows powershell as administrator and then python _3_block.py_.
 3. To run _3_block.py_ on linux, change hosts_path to "/etc/hosts" and run as sudo python _3_block.py_ or sudo python3 _3_block.py_.
-2. Definitions of some terms:
+4. Definitions of some terms:
    - Amicable numbers : A pair of numbers, each of which is the sum of the factors of the other.
    - Armstrong numbers : It is a number that is equal to the sum of cubes of its digits.
    - LU Decomposition : Let A be a square matrix. An LU factorization refers to the factorization of A, with proper row and/or column orderings or permutations, into two factors, a lower triangular matrix L and an upper triangular matrix U, A=LU.
@@ -74,4 +74,5 @@ The questions are written in the form of comments in all the programs. All pytho
   
 #### ***Assignment 9***
 1. To run the programs, execute the command : gcc _filename_ -lpthread and then ./a.out on linux
-2. 
+2. The concept of threading is implemented in this assignment.
+3. An array of size 3 is taken for _clock.c_ and mutex lock is used for the critical sections.
