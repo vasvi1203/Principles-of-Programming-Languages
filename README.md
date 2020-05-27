@@ -5,8 +5,7 @@
 ### [Project link](https://github.com/vasusharma7/Project-EVA)
 The questions are written in the form of comments in all the programs. All python programs are written in python 3.
 #### ***Assignment 1***
-1. To run any program, execute the command : 
-```python _filename_ or python3 _filename_ except for _3_block.py_```
+1. To run any program, execute the command : python _filename_ or python3 _filename_ except for _3_block.py_
 2. To run _3_block.py_ on windows, run cmd or windows powershell as administrator and then python _3_block.py_.
 3. To run _3_block.py_ on linux, change hosts_path to "/etc/hosts" and run as sudo python _3_block.py_ or sudo python3 _3_block.py_.
 4. Definitions of some terms:
