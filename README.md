@@ -2,7 +2,7 @@
 ### Name : Vasvi Gupta
 ### MIS : 111803128
 ### Division : 2
-### [Project link](https://github.com/vasusharma7/Project-EVA)
+### [Project link](https://github.com/vasvi1203/Project-EVA)
 The questions are written in the form of comments in all the programs. All python programs are written in python 3.
 #### ***Assignment 1***
 1. To run any program, execute the command : python _filename_ or python3 _filename_ except for _3_block.py_
