@@ -37,7 +37,7 @@ The questions are written in the form of comments in all the programs. All pytho
    - Interface : It is a collection of only abstract methods. For eg. in the _shapes.py_ file, _class Instance()_ is an interface.
    - Polymorphism : It allows us to define methods in the derived class with the same name as defined in their base class. 
    - Modularity : It is the process of decomposing a program into a set of modules. For eg. in this assignment, _animals.py_ and _shapes.py_ are modules which are imported into _main.py_
-   - Hierarchy : There exists a hierarchial relationship between classes which is explained through the following example. For eg. in the _animals.py_ file, _class Lion()_ inherits from _class Cat()_ which in turn inherits from _class Animal()_. Hence, there exists a hierarchial relationship between the three classes.
+   - Hierarchy : When more than one derived classes are created from a single base, it is said to form a hierarchy which is explained through the following example. For eg. in the _animals.py_ file, all the derived classes are created from a single base class, i.e., the _class Animal_. Hence, there exists a hierarchy.
 
 #### ***Assignment 5***
 1. To run the program, execute the command : python exceptions.py or python3 exceptions.py
