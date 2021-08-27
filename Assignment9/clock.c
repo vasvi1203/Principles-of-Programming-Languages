@@ -50,13 +50,14 @@ void *func(void *arg) {
 		
 
 int main() {
+	pthread_mutex_init(&lock, NULL);
 	int i;
 	while(1) {
 		for(i = 0; i < 3; i++) {		
 			pthread_create(&(tid[i]), NULL, func, (void *)&i);
 			pthread_join(tid[i], NULL);
 		}
-		//pthread_mutex_destroy(&lock);
 	}
+	pthread_mutex_destroy(&lock);
 	return 0;
 }
